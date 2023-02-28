@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SkyWay Tutorial</title>
+    <style>
+      /* イラストのスタイル */
+      .illustration {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="./sound/0000_s082_CarKlaxion.mp3" type="audio/mp3" />
+    </audio>
+    <p>ID: <span id="my-id"></span></p>
+    <div>
+      room name: <input id="room-name" type="text" />
+      <button id="join">join</button>
+      <!-- </div>
+    <video id="local-video" width="400px" muted playsinline></video>
+    <div> -->
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <!-- <div class="illustration" draggable="true"> -->
+      <img class="illustration" draggable="true" src="./image/car_character.png" alt="イラスト" />
+      <!-- </div> -->
+      <button id="clearButton">Clear</button>
+      write dataStream: <input id="data-stream" type="text" />
+      <button id="write">write</button>
+    </div>
+    <div id="button-area"></div>
+    <div id="remote-media-area"></div>
+    <!-- <script>
+      const audio = document.getElementById("myAudio");
+      const playButton = document.getElementById("playButton");
+      playButton.addEventListener("click", function () {
+        audio.play();
+      });
+    </script> -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
